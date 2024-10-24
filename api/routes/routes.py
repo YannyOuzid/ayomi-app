@@ -37,7 +37,7 @@ async def delete_result(id: str):
     Args:
         id (_id): The ID of the item to delete.
     Returns:
-        
+        A string "Item deleted successfully"
     """
     collection.find_one_and_delete({"_id": ObjectId(id)})
     return "Item deleted successfully"
