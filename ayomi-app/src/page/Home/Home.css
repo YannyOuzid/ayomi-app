@@ -1,0 +1,23 @@
+.home {
+    display: flex;
+}
+
+.calculator-side {
+    width: 50%;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+
+.card-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.card-list {
+    width: 70%;
+}

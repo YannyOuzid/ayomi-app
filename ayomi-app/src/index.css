@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Mono";
+  src: url("./fonts/digital-7\ \(mono\).ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "Mono";
+}
+
+button {
+  font-family: "Mono";
+}

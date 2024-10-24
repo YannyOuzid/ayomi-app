@@ -1,0 +1,17 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

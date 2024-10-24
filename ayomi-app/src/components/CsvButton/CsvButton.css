@@ -1,0 +1,19 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.csv-button {
+    width: 50%;
+    background-color: palegreen;
+    height: 80px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}

@@ -1,0 +1,9 @@
+.result-display {
+    background-color: black;
+    color: white;
+    height: 130px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 100px;
+}

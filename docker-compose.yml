@@ -1,0 +1,39 @@
+services:
+  front-end:
+    build: ./ayomi-app/
+    command: sh -c "npm run start"
+    ports:
+      - 3000:3000
+    volumes:
+      - ./ayomi-app:/app
+    networks:
+      - my_network
+
+  api:
+    build: ./api/
+    command: sh -c "uvicorn main:app --reload --port=8000 --host=0.0.0.0"
+    ports:
+      - 8000:8000
+    volumes:
+      - ./api:/app
+    networks:
+      - my_network
+    environment:
+      MONGO_URI: mongodb://database:27017/npi
+      MONGO_TEST_URI: mongodb://database:27017/test_db
+
+  database:
+    image: mongo:8.0.1
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+
+volumes:
+  mongo_data:
