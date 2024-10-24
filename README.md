@@ -24,7 +24,7 @@ Use pytest `python -m pytest tests/`/
 
 ## Warning
 
-**wThe main database is used during the test, be sure to comment** `db = client.npi` **and uncomment** `db = client.test` **in database.py**
+**The main database is used during the test, be sure to comment** `db = client.npi` **and uncomment** `db = client.test` **in database.py**
 
 ## Docs
 
