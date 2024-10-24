@@ -5,9 +5,9 @@ mongodb_uri = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
 client = MongoClient(mongodb_uri)
 
 #Comment this line when you want to use pytest
-db = client.npi
+#db = client.npi
 
 #Uncomment this line when you want to use pytest
-#db = client.test 
+db = client.test 
 
 collection = db["calculator"]
