@@ -19,8 +19,7 @@ services:
     networks:
       - my_network
     environment:
-      MONGO_URI: mongodb://database:27017/npi
-      MONGO_TEST_URI: mongodb://database:27017/test_db
+      - MONGODB_URI=mongodb://database:27017
 
   database:
     image: mongo:8.0.1

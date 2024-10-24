@@ -1,8 +1,13 @@
 from pymongo import MongoClient
 import os
 
-MONGO_DETAILS = os.getenv("MONGO_URI", "mongodb://localhost:27017/npi")
-client = MongoClient(MONGO_DETAILS)
-db = client.get_default_database()
+mongodb_uri = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
+client = MongoClient(mongodb_uri)
+
+#Comment this line when you want to use pytest
+db = client.npi
+
+#Uncomment this line when you want to use pytest
+#db = client.test 
 
 collection = db["calculator"]

@@ -18,8 +18,10 @@ Get the csv `http://localhost:8000/api/calculator/csv`
 ## Use pytest
 
 To use pytest you need to be in the api folder\
-Create your python environnment with `source env/bin/activate`\
-Use pytest `python -m pytest tests/` **warning during the test the main database is used, be sure to have your data base empty**
+Create your python environnment with `python3 -m venv env` then `source env/bin/activate`\
+Install the dependencies with `pip install -r requirements.txt`
+Use pytest `python -m pytest tests/`/
+**warning the main database is used during the test, be sure to comment** `db = client.npi` **and uncomment** `db = client.test` **in database.py**
 
 ## Docs
 
